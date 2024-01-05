@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="22155" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22131"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="BirthdayNoteTaker" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="İsim Giriniz" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="lMK-L2-Cf8">
+                                <rect key="frame" x="49" y="99" width="293" height="34"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="34" id="vrp-8W-m2W"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Doğum Günü Giriniz" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="rqi-jG-um3">
+                                <rect key="frame" x="50" y="157" width="293" height="34"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="34" id="I6C-7B-4zY"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="İsim: " textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aDp-Ca-iRR">
+                                <rect key="frame" x="49" y="286" width="294" height="32"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="32" id="ICU-gh-Jc7"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Doğum Günü: " textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RR9-ry-XSR">
+                                <rect key="frame" x="48" y="326" width="294" height="56"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Gtm-hS-210">
+                                <rect key="frame" x="50" y="215" width="88" height="35"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="KAYDET"/>
+                                <connections>
+                                    <action selector="saveButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="zOS-0O-hcz"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Bp5-e6-sYZ">
+                                <rect key="frame" x="270" y="215" width="48" height="35"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="SİL"/>
+                                <connections>
+                                    <action selector="deleteButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="sHo-aN-fd2"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Bp5-e6-sYZ" secondAttribute="trailing" constant="75" id="1dY-aj-DG0"/>
+                            <constraint firstItem="lMK-L2-Cf8" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="40" id="2Ku-22-QVZ"/>
+                            <constraint firstItem="rqi-jG-um3" firstAttribute="leading" secondItem="Gtm-hS-210" secondAttribute="leading" id="2fR-pp-6GK"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="RR9-ry-XSR" secondAttribute="bottom" constant="436" id="6kX-PC-63f"/>
+                            <constraint firstItem="lMK-L2-Cf8" firstAttribute="centerX" secondItem="aDp-Ca-iRR" secondAttribute="centerX" id="Bjg-eM-Ve1"/>
+                            <constraint firstItem="Gtm-hS-210" firstAttribute="baseline" secondItem="Bp5-e6-sYZ" secondAttribute="baseline" id="CPe-fo-K4o"/>
+                            <constraint firstItem="rqi-jG-um3" firstAttribute="trailing" secondItem="aDp-Ca-iRR" secondAttribute="trailing" id="GSc-WE-9eC"/>
+                            <constraint firstItem="rqi-jG-um3" firstAttribute="centerX" secondItem="aDp-Ca-iRR" secondAttribute="centerX" id="MmA-tI-PMv"/>
+                            <constraint firstItem="lMK-L2-Cf8" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="49" id="XWg-MT-ESZ"/>
+                            <constraint firstItem="rqi-jG-um3" firstAttribute="top" secondItem="lMK-L2-Cf8" secondAttribute="bottom" constant="24" id="bVd-pD-oyU"/>
+                            <constraint firstItem="Bp5-e6-sYZ" firstAttribute="baseline" secondItem="Gtm-hS-210" secondAttribute="firstBaseline" id="cKk-y4-MrQ"/>
+                            <constraint firstItem="lMK-L2-Cf8" firstAttribute="leading" secondItem="aDp-Ca-iRR" secondAttribute="leading" id="f8f-CC-OaN"/>
+                            <constraint firstItem="lMK-L2-Cf8" firstAttribute="trailing" secondItem="RR9-ry-XSR" secondAttribute="trailing" id="flX-6C-sPv"/>
+                            <constraint firstItem="Gtm-hS-210" firstAttribute="top" secondItem="rqi-jG-um3" secondAttribute="bottom" constant="24" id="iS0-Fz-CIQ"/>
+                            <constraint firstItem="RR9-ry-XSR" firstAttribute="top" secondItem="aDp-Ca-iRR" secondAttribute="bottom" constant="8" id="tKl-Bg-Gp9"/>
+                            <constraint firstItem="lMK-L2-Cf8" firstAttribute="centerX" secondItem="RR9-ry-XSR" secondAttribute="centerX" id="tjl-6d-e7N"/>
+                            <constraint firstItem="aDp-Ca-iRR" firstAttribute="top" secondItem="Gtm-hS-210" secondAttribute="bottom" constant="36" id="va5-oX-KRn"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="lMK-L2-Cf8" secondAttribute="trailing" constant="51" id="xL7-XR-rcp"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="BirthdayTewtField" destination="rqi-jG-um3" id="pQ2-Pz-6qk"/>
+                        <outlet property="birthdayLabel" destination="RR9-ry-XSR" id="YqF-8r-PoX"/>
+                        <outlet property="nameLabel" destination="aDp-Ca-iRR" id="DFc-eX-LKZ"/>
+                        <outlet property="nameTextField" destination="lMK-L2-Cf8" id="Fsp-fJ-Rdf"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="116.79389312977099" y="3.5211267605633805"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
