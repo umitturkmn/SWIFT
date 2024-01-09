@@ -9,12 +9,15 @@ import UIKit
 import Firebase
 
 class SettingsViewController: UIViewController {
-
+    var userEmailArray = [String]()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         overrideUserInterfaceStyle = .light
-       
+        
+        
     }
+    
     
 
     @IBAction func logoutClicked(_ sender: Any) {
