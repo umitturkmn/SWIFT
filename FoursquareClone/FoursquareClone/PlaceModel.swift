@@ -16,6 +16,8 @@ class PlaceModel {
     var placeType = ""
     var placeAtm = ""
     var placeImg = UIImage()
+    var placeLatitude = ""
+    var placeLongitude = ""
     
     private init(){}
     

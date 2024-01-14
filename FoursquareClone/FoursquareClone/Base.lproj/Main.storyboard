@@ -227,46 +227,70 @@
         <scene sceneID="MbB-dD-prp">
             <objects>
                 <viewController id="1q4-bc-kCw" customClass="DetailsVC" customModule="FoursquareClone" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="g3Q-IF-e5L">
+                    <view key="view" contentMode="scaleToFill" ambiguous="YES" id="g3Q-IF-e5L">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="BuR-Im-4Ma">
-                                <rect key="frame" x="0.0" y="44" width="414" height="299"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="BuR-Im-4Ma">
+                                <rect key="frame" x="20" y="88" width="381" height="299"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="414" id="3v1-w6-8cx"/>
-                                    <constraint firstAttribute="height" constant="299" id="g5T-zt-Vqv"/>
+                                    <constraint firstAttribute="width" constant="381" id="3Wr-sK-zcN"/>
+                                    <constraint firstAttribute="height" constant="299" id="nZr-Ry-Qnc"/>
                                 </constraints>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Mekanın İsmi" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gwl-08-jfs">
-                                <rect key="frame" x="60" y="351" width="294" height="38"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Mekanın İsmi" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gwl-08-jfs">
+                                <rect key="frame" x="60" y="395" width="294" height="38"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="38" id="PTi-Td-nng"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" name="Rockwell-Bold" family="Rockwell" pointSize="20"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Mekanın Tipi" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KfS-YG-iRY">
-                                <rect key="frame" x="60" y="397" width="294" height="46"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Mekanın Atmosferi" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Tcr-mo-FP7">
+                                <rect key="frame" x="60" y="475" width="294" height="45"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="45" id="R4n-Jb-eYz"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" name="Rockwell-Bold" family="Rockwell" pointSize="20"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Mekanın Atmosferi" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Tcr-mo-FP7">
-                                <rect key="frame" x="60" y="451" width="294" height="45"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" name="Rockwell-Bold" family="Rockwell" pointSize="20"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Gxt-H1-hXe">
-                                <rect key="frame" x="0.0" y="504" width="414" height="232"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Gxt-H1-hXe">
+                                <rect key="frame" x="0.0" y="484" width="414" height="232"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="232" id="Hdm-9d-xWu"/>
+                                </constraints>
                                 <standardMapConfiguration key="preferredConfiguration"/>
                             </mapView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Mekanın Tipi" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KfS-YG-iRY">
+                                <rect key="frame" x="60" y="432" width="294" height="46"/>
+                                <fontDescription key="fontDescription" name="Rockwell-Bold" family="Rockwell" pointSize="20"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="zcX-Jm-qga"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="gwl-08-jfs" firstAttribute="top" secondItem="BuR-Im-4Ma" secondAttribute="bottom" constant="8" id="5AV-SR-egN"/>
+                            <constraint firstItem="KfS-YG-iRY" firstAttribute="leading" secondItem="Tcr-mo-FP7" secondAttribute="leading" id="Ajq-r6-U2i"/>
+                            <constraint firstItem="KfS-YG-iRY" firstAttribute="top" secondItem="BuR-Im-4Ma" secondAttribute="bottom" constant="45" id="BAK-yu-6wn"/>
+                            <constraint firstItem="gwl-08-jfs" firstAttribute="leading" secondItem="KfS-YG-iRY" secondAttribute="leading" id="BeU-x5-nvh"/>
+                            <constraint firstItem="KfS-YG-iRY" firstAttribute="trailing" secondItem="Tcr-mo-FP7" secondAttribute="trailing" id="Hfm-vP-gmc"/>
+                            <constraint firstItem="Gxt-H1-hXe" firstAttribute="top" secondItem="Tcr-mo-FP7" secondAttribute="bottom" constant="8" id="PGS-2n-bDj"/>
+                            <constraint firstItem="BuR-Im-4Ma" firstAttribute="top" secondItem="zcX-Jm-qga" secondAttribute="top" constant="44" id="V4O-ZF-Rx4"/>
+                            <constraint firstItem="zcX-Jm-qga" firstAttribute="trailing" secondItem="BuR-Im-4Ma" secondAttribute="trailing" constant="13" id="VDw-NU-y4I"/>
+                            <constraint firstItem="gwl-08-jfs" firstAttribute="leading" secondItem="zcX-Jm-qga" secondAttribute="leading" constant="60" id="VFd-c9-msB"/>
+                            <constraint firstItem="Tcr-mo-FP7" firstAttribute="top" secondItem="gwl-08-jfs" secondAttribute="bottom" constant="42" id="YuY-eX-UrT"/>
+                            <constraint firstItem="Gxt-H1-hXe" firstAttribute="leading" secondItem="zcX-Jm-qga" secondAttribute="leading" id="ccE-cV-cZC"/>
+                            <constraint firstItem="Gxt-H1-hXe" firstAttribute="bottom" secondItem="zcX-Jm-qga" secondAttribute="bottom" id="dz9-aI-Qxl"/>
+                            <constraint firstItem="gwl-08-jfs" firstAttribute="centerX" secondItem="g3Q-IF-e5L" secondAttribute="centerX" id="oKN-8z-CWf"/>
+                            <constraint firstItem="gwl-08-jfs" firstAttribute="trailing" secondItem="KfS-YG-iRY" secondAttribute="trailing" id="p6d-aB-cj1"/>
+                            <constraint firstItem="BuR-Im-4Ma" firstAttribute="leading" secondItem="g3Q-IF-e5L" secondAttribute="leadingMargin" id="rdd-B5-Nwh"/>
+                            <constraint firstItem="Tcr-mo-FP7" firstAttribute="centerX" secondItem="Gxt-H1-hXe" secondAttribute="centerX" id="u0j-qj-CXG"/>
+                            <constraint firstItem="Gxt-H1-hXe" firstAttribute="top" secondItem="KfS-YG-iRY" secondAttribute="bottom" constant="50" id="wH2-Xf-u3z"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="IBH-lx-ms9"/>
                     <connections>
@@ -306,6 +330,7 @@
                     <navigationItem key="navigationItem" id="bH1-Vc-y6M"/>
                     <connections>
                         <outlet property="mapView" destination="gsv-vL-Nzc" id="Sj1-0Q-3xa"/>
+                        <segue destination="Wby-et-SFf" kind="presentation" identifier="fromMapVCtoPlacesVc" modalPresentationStyle="fullScreen" id="4sV-5H-LFr"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="UxI-Hc-bYJ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -351,6 +376,9 @@
             <point key="canvasLocation" x="3940.579710144928" y="1.6304347826086958"/>
         </scene>
     </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="4sV-5H-LFr"/>
+    </inferredMetricsTieBreakers>
     <resources>
         <image name="addimage" width="512" height="512"/>
         <image name="foursquare" width="934" height="933"/>
