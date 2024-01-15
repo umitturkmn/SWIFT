@@ -13,6 +13,7 @@
 		893108B82B54ABDE00F6D13C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 893108B62B54ABDE00F6D13C /* Main.storyboard */; };
 		893108BA2B54ABE000F6D13C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 893108B92B54ABE000F6D13C /* Assets.xcassets */; };
 		893108BD2B54ABE000F6D13C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 893108BB2B54ABE000F6D13C /* LaunchScreen.storyboard */; };
+		893108C52B54ADC900F6D13C /* MobileNetV2.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 893108C42B54ADC900F6D13C /* MobileNetV2.mlmodel */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		893108B92B54ABE000F6D13C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		893108BC2B54ABE000F6D13C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		893108BE2B54ABE000F6D13C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		893108C42B54ADC900F6D13C /* MobileNetV2.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; name = MobileNetV2.mlmodel; path = ../../../../../../Downloads/MobileNetV2.mlmodel; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,6 +63,7 @@
 				893108B42B54ABDE00F6D13C /* ViewController.swift */,
 				893108B62B54ABDE00F6D13C /* Main.storyboard */,
 				893108B92B54ABE000F6D13C /* Assets.xcassets */,
+				893108C42B54ADC900F6D13C /* MobileNetV2.mlmodel */,
 				893108BB2B54ABE000F6D13C /* LaunchScreen.storyboard */,
 				893108BE2B54ABE000F6D13C /* Info.plist */,
 			);
@@ -140,6 +143,7 @@
 			files = (
 				893108B52B54ABDE00F6D13C /* ViewController.swift in Sources */,
 				893108B12B54ABDE00F6D13C /* AppDelegate.swift in Sources */,
+				893108C52B54ADC900F6D13C /* MobileNetV2.mlmodel in Sources */,
 				893108B32B54ABDE00F6D13C /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -300,6 +304,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.6;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -328,6 +333,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.6;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
