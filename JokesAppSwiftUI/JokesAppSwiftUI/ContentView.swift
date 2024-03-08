@@ -8,15 +8,22 @@
 import SwiftUI
 
 struct ContentView: View {
+    
+    @ObservedObject var jokesVM = JokesViewModel()
+    
     var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundStyle(.tint)
-            Text("Hello, world!")
+        NavigationStack{
+            List(jokesVM.jokes) { element in
+                Text(element.joke)
+            }
+                .navigationTitle(Text("Jokes"))
+                .frame(alignment: .center)
+                .preferredColorScheme(.light)
+                .font(.title3)
+                .foregroundStyle(.orange)
         }
-        .padding()
     }
+  
 }
 
 #Preview {

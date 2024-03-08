@@ -15,7 +15,22 @@
 		89C0D5372B9B625E00C8F7D1 /* JokesViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89C0D5362B9B625E00C8F7D1 /* JokesViewModel.swift */; };
 		89C0D53A2B9B636E00C8F7D1 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 89C0D5392B9B636E00C8F7D1 /* Alamofire */; };
 		89C0D53C2B9B636E00C8F7D1 /* AlamofireDynamic in Frameworks */ = {isa = PBXBuildFile; productRef = 89C0D53B2B9B636E00C8F7D1 /* AlamofireDynamic */; };
+		89C0D53D2B9B68AA00C8F7D1 /* AlamofireDynamic in Embed Frameworks */ = {isa = PBXBuildFile; productRef = 89C0D53B2B9B636E00C8F7D1 /* AlamofireDynamic */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		89C0D53E2B9B68AA00C8F7D1 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				89C0D53D2B9B68AA00C8F7D1 /* AlamofireDynamic in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		89C0D5232B9B5E2300C8F7D1 /* JokesAppSwiftUI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JokesAppSwiftUI.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -87,6 +102,7 @@
 				89C0D51F2B9B5E2200C8F7D1 /* Sources */,
 				89C0D5202B9B5E2200C8F7D1 /* Frameworks */,
 				89C0D5212B9B5E2200C8F7D1 /* Resources */,
+				89C0D53E2B9B68AA00C8F7D1 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);

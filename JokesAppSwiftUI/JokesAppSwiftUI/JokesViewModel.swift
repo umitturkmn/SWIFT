@@ -12,6 +12,10 @@ class JokesViewModel : ObservableObject {
     
     @Published var jokes = [Value]()
     
+    init(){
+        getJokes()
+    }
+    
     func getJokes(){
         
         AF.request("https://raw.githubusercontent.com/atilsamancioglu/JokesAppJsonData/main/chuck.json",method: .get).responseDecodable(of: Welcome.self) { response in
