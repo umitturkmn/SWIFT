@@ -1,5 +1,5 @@
 //
-//  Dog.swift
+//  Cat.swift
 //  SwiftUINavigation
 //
 //  Created by Ümit Türkmen on 11.03.2024.
@@ -7,11 +7,11 @@
 
 import Foundation
 
-struct Dog: Identifiable, Hashable {
-    
+
+struct Cat: Identifiable, Hashable {
     var id = UUID()
     let name : String
     
 }
 
-let dogs : [Dog] = [Dog(name: "Çomar"), Dog(name: "Şanslı"),Dog(name: "Yaramaz")]
+let cats : [Cat] = [Cat(name: "Maviş"), Cat(name: "Duman"),Cat(name: "Salak")]
