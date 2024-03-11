@@ -8,14 +8,30 @@
 import SwiftUI
 
 struct ContentView: View {
+    
+    @ObservedObject var userListViewModel : UserListViewModel
+    init(){
+        self.userListViewModel = UserListViewModel(service: WebService())
+    }
+    
     var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundStyle(.tint)
-            Text("Hello, world!")
+        List(userListViewModel.userList,id: \.id){user in
+            VStack {
+                Text(user.name)
+                    .font(.title3)
+                    .foregroundStyle(.blue)
+                    .frame(maxWidth: .infinity,alignment: .leading)
+                Text(user.username)
+                    .font(.title2)
+                    .foregroundStyle(.red)
+                    .frame(maxWidth: .infinity,alignment: .leading)
+                Text(user.email)
+                    .frame(maxWidth: .infinity,alignment: .leading)
+                    .foregroundStyle(.green)
+            }
+        }.task {
+            await userListViewModel.downloadUsers()
         }
-        .padding()
     }
 }
 
