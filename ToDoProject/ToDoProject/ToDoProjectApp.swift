@@ -1,14 +1,14 @@
 //
-//  ToDoListSWIFTApp.swift
-//  ToDoListSWIFT
+//  ToDoProjectApp.swift
+//  ToDoProject
 //
-//  Created by Ümit Türkmen on 11.03.2024.
+//  Created by Ümit Türkmen on 14.03.2024.
 //
 
 import SwiftUI
 
 @main
-struct ToDoListSWIFTApp: App {
+struct ToDoProjectApp: App {
     var body: some Scene {
         WindowGroup {
             ContentView()

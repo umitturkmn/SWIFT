@@ -1,8 +1,8 @@
 //
 //  ContentView.swift
-//  ToDoListSWIFT
+//  ToDoProject
 //
-//  Created by Ümit Türkmen on 11.03.2024.
+//  Created by Ümit Türkmen on 14.03.2024.
 //
 
 import SwiftUI
