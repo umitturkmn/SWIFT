@@ -11,7 +11,10 @@ import SwiftUI
 struct ToDoProjectApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            NavigationStack {
+                AddToDoScreen().modelContainer(for: [ToDo.self])
+            }
+            
         }
     }
 }
