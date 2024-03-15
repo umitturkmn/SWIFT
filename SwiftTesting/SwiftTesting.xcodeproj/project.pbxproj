@@ -16,6 +16,7 @@
 		895635DD2BA460ED001530DF /* SwiftTestingTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 895635DC2BA460ED001530DF /* SwiftTestingTests.swift */; };
 		895635E72BA460ED001530DF /* SwiftTestingUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 895635E62BA460ED001530DF /* SwiftTestingUITests.swift */; };
 		895635E92BA460ED001530DF /* SwiftTestingUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 895635E82BA460ED001530DF /* SwiftTestingUITestsLaunchTests.swift */; };
+		895635F62BA4611A001530DF /* MathFunc.swift in Sources */ = {isa = PBXBuildFile; fileRef = 895635F52BA4611A001530DF /* MathFunc.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +50,7 @@
 		895635E22BA460ED001530DF /* SwiftTestingUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SwiftTestingUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		895635E62BA460ED001530DF /* SwiftTestingUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftTestingUITests.swift; sourceTree = "<group>"; };
 		895635E82BA460ED001530DF /* SwiftTestingUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftTestingUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		895635F52BA4611A001530DF /* MathFunc.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MathFunc.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -106,6 +108,7 @@
 				895635CE2BA460EC001530DF /* Assets.xcassets */,
 				895635D02BA460EC001530DF /* LaunchScreen.storyboard */,
 				895635D32BA460EC001530DF /* Info.plist */,
+				895635F52BA4611A001530DF /* MathFunc.swift */,
 			);
 			path = SwiftTesting;
 			sourceTree = "<group>";
@@ -261,6 +264,7 @@
 				895635CA2BA460EB001530DF /* ViewController.swift in Sources */,
 				895635C62BA460EB001530DF /* AppDelegate.swift in Sources */,
 				895635C82BA460EB001530DF /* SceneDelegate.swift in Sources */,
+				895635F62BA4611A001530DF /* MathFunc.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -450,6 +454,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.6;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -478,6 +483,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.6;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -500,7 +506,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = Y24YW3TR2H;
 				GENERATE_INFOPLIST_FILE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 17.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.6;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.umitturkmen.SwiftTestingTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -520,7 +526,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = Y24YW3TR2H;
 				GENERATE_INFOPLIST_FILE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 17.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.6;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.umitturkmen.SwiftTestingTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -539,6 +545,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = Y24YW3TR2H;
 				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.6;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.umitturkmen.SwiftTestingUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -557,6 +564,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = Y24YW3TR2H;
 				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.6;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.umitturkmen.SwiftTestingUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
